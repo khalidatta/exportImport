@@ -50,7 +50,7 @@
 		</plugins>
 		
 		<finalName> 
-exportImport </finalName>
+spring-boot-maven-plugin </finalName>
 	</build>
 
 
