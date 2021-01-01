@@ -1,4 +1,6 @@
-FROM openjdk:8
+
+FROM openjdk:8-jdk-alpine
 EXPOSE 8080
-ADD target/spring-boot-maven-plugin.jar spring-boot-maven-plugin.jar
-ENTRYPOINT ["java","-jar","/spring-boot-maven-plugin.jar spring-boot-maven-plugin.jar"]
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]

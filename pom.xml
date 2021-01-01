@@ -49,8 +49,8 @@
 			</plugin>
 		</plugins>
 		
-		<finalName> 
-spring-boot-maven-plugin </finalName>
+		
+
 	</build>
 
 
